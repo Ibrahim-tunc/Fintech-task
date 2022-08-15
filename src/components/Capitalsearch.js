@@ -13,7 +13,7 @@ const Capitalsearch = () => {
     }
 
     function compare (c) {
-        return c?.capital?.substring(0, input.length).toUpperCase() === input.toUpperCase()
+        return c?.capital?.substring(0, input.length).toLocaleUpperCase('tr-TR') === input.toLocaleUpperCase('tr-TR')
     }
 
     useEffect(() => {

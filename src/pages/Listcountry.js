@@ -43,8 +43,8 @@ const Listcountry = () => {
                     {     /* handled country datas is placed in the relevant tables - çekilen ülke verileri ilgili tablolarayerleştiriliyor */
                      countries.map((c, i) =>
                             countries &&
-                            <tr className={others && !JSON.stringify(c).toLowerCase()
-                            .includes(inputGeneral.toLowerCase()) && "none"} key={i}> {/* Checking that the entered input matches any data -  input girilmişse herhangi bir veriyle eşleştiği kontrol ediliyor*/}
+                            <tr className={others && !JSON.stringify(c).toLocaleUpperCase('tr-TR')
+                            .includes(inputGeneral.toLocaleUpperCase('tr-TR')) && "none"} key={i}> {/* Checking that the entered input matches any data -  input girilmişse herhangi bir veriyle eşleştiği kontrol ediliyor*/}
                                 <td>{i}</td>
                                 <td>{c.name}</td>
                                 <td>{c.capital}</td>

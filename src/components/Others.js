@@ -48,7 +48,7 @@ const Others = ({ c }) => {
 
   // This function checks whether it contains the entered values ​​or not. Girilen inputu içerip içermediği bu fonksiyon ile kontrol edilir.
   function isInclude(p){
-    return JSON.stringify(p).toLowerCase().includes(inputGeneral.toLowerCase())
+    return JSON.stringify(p).toLocaleUpperCase('tr-TR').includes(inputGeneral.toLocaleUpperCase('tr-TR'))
   }
 
 
